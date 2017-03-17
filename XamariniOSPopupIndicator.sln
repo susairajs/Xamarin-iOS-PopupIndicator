@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamariniOSPopupIndicator", "XamariniOSPopupIndicator\XamariniOSPopupIndicator.csproj", "{E555D2D8-8EE8-49C7-B1AD-9B9DD946999C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E555D2D8-8EE8-49C7-B1AD-9B9DD946999C}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{E555D2D8-8EE8-49C7-B1AD-9B9DD946999C}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{E555D2D8-8EE8-49C7-B1AD-9B9DD946999C}.Release|iPhone.ActiveCfg = Release|iPhone
+		{E555D2D8-8EE8-49C7-B1AD-9B9DD946999C}.Release|iPhone.Build.0 = Release|iPhone
+		{E555D2D8-8EE8-49C7-B1AD-9B9DD946999C}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{E555D2D8-8EE8-49C7-B1AD-9B9DD946999C}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{E555D2D8-8EE8-49C7-B1AD-9B9DD946999C}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{E555D2D8-8EE8-49C7-B1AD-9B9DD946999C}.Debug|iPhone.Build.0 = Debug|iPhone
+	EndGlobalSection
+EndGlobal

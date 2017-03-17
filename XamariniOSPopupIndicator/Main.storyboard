@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="120" width="560" height="30"/>
+                                <state key="normal" title="Show Popup">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="BtnPopup_TouchUpInside:" destination="BYZ-38-t0r" id="45" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" id="7" translatesAutoresizingMaskIntoConstraints="NO" hidden="YES">
+                                <rect key="frame" x="50" y="300" width="500" height="128"/>
+                                <color key="backgroundColor" colorSpace="calibratedWhite" white="0.333333333333333" alpha="1"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="22">
+                                        <rect key="frame" x="100" y="20" width="300" height="20"/>
+                                        <color key="color" colorSpace="calibratedRGB" red="1" green="0" blue="1" alpha="1"/>
+                                    </activityIndicatorView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Progress Loading..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="30" translatesAutoresizingMaskIntoConstraints="NO">
+                                        <rect key="frame" x="50" y="70" width="400" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint id="10" firstItem="7" firstAttribute="height" constant="128"/>
+                                    <constraint id="23" firstItem="22" firstAttribute="top" secondItem="7" secondAttribute="top" constant="20"/>
+                                    <constraint id="24" firstItem="22" firstAttribute="leading" secondItem="7" secondAttribute="leading" constant="100"/>
+                                    <constraint id="25" firstItem="7" firstAttribute="trailing" secondItem="22" secondAttribute="trailing" constant="100"/>
+                                    <constraint id="34" firstItem="30" firstAttribute="top" secondItem="22" secondAttribute="bottom" constant="30"/>
+                                    <constraint id="35" firstItem="30" firstAttribute="leading" secondItem="7" secondAttribute="leading" constant="50"/>
+                                    <constraint id="36" firstItem="7" firstAttribute="trailing" secondItem="30" secondAttribute="trailing" constant="50"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute keyPath="layer.cornerRadius" type="number">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint id="4" firstItem="3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100"/>
+                            <constraint id="5" firstItem="3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20"/>
+                            <constraint id="6" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" constant="20"/>
+                            <constraint id="8" firstItem="7" firstAttribute="top" secondItem="3" secondAttribute="bottom" constant="150"/>
+                            <constraint id="9" firstItem="7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50"/>
+                            <constraint id="11" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="7" secondAttribute="trailing" constant="50"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnPopup" destination="3" id="name-outlet-3"/>
+                        <outlet property="view1" destination="7" id="name-outlet-7"/>
+                        <outlet property="lblDisplay" destination="30" id="name-outlet-30"/>
+                        <outlet property="indicator1" destination="22" id="name-outlet-22"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+</document>
